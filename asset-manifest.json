@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react_todolist/static/css/main.9c53fdda.chunk.css",
+    "main.js": "/react_todolist/static/js/main.c1db4332.chunk.js",
+    "main.js.map": "/react_todolist/static/js/main.c1db4332.chunk.js.map",
+    "runtime-main.js": "/react_todolist/static/js/runtime-main.d6333059.js",
+    "runtime-main.js.map": "/react_todolist/static/js/runtime-main.d6333059.js.map",
+    "static/js/2.04e4175f.chunk.js": "/react_todolist/static/js/2.04e4175f.chunk.js",
+    "static/js/2.04e4175f.chunk.js.map": "/react_todolist/static/js/2.04e4175f.chunk.js.map",
+    "static/js/3.baae3a13.chunk.js": "/react_todolist/static/js/3.baae3a13.chunk.js",
+    "static/js/3.baae3a13.chunk.js.map": "/react_todolist/static/js/3.baae3a13.chunk.js.map",
+    "index.html": "/react_todolist/index.html",
+    "static/css/main.9c53fdda.chunk.css.map": "/react_todolist/static/css/main.9c53fdda.chunk.css.map",
+    "static/js/2.04e4175f.chunk.js.LICENSE.txt": "/react_todolist/static/js/2.04e4175f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react_todolist/static/media/pexels-pratik-gupta.2c37a6c9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d6333059.js",
+    "static/js/2.04e4175f.chunk.js",
+    "static/css/main.9c53fdda.chunk.css",
+    "static/js/main.c1db4332.chunk.js"
+  ]
+}
