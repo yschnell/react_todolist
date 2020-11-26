@@ -4,6 +4,7 @@ import Todo from './Todo';
 
 // main function with all ({ props })
 const TodoList = ({ todos, setTodos, filteredTodos }) => {
+    
     return (
         <div className="todo-container">
             <ul className="todo-list">
