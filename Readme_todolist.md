@@ -27,8 +27,10 @@ Create new folder "components" in src folder and create 2 new files inside it:
 In App.js, adding: "import React, { useState } from "react";"
 ==> UI & React update based on state
 
+//GOAL: GET TODOS & INPUT & WHAT WE USE IN THE WEB APP INTO STATE.
+        ONCE IN STATE: THE UI WILL REACT TO THE CHANGES: 
 
-// CREATING MAIN FUNCTION COMPONENTS: const Form, const TodoList
+// CREATING BASIC FUNCTION COMPONENTS: const Form, const TodoList
 
 
     Form.js:
@@ -93,10 +95,11 @@ Files are structured
 
     App.js:
 
-10 - Passing down the STATE [todos, setTodos] in component <Form todos={todos} setTodos={setTodos} /> App.js
-                                                           <ToDoList todos={todos} setTodos={setTodos} /> App.js
+10 - Passing down the STATES [todos, setTodos] in component <Form todos={todos} setTodos={setTodos} /> App.js
+                                                            <ToDoList todos={todos} setTodos={setTodos} /> App.js
 
-    Importing the props in ***const Form ({}) after setInputText and in ***const ToDoList ({}). // todos & setTodos the 3rd and 4th props
+    Importing the props in ***const Form ({}) after setInputText and in ***const ToDoList ({}). 
+    // todos & setTodos the 3rd and 4th props
 
     Form.js:
 
@@ -107,7 +110,7 @@ Files are structured
     But "inputText" to be defined: passing down the STATE in <Form inputText={inputText} /> App.js and importing it in ***const Form ({})
     // inputText ==> 1st props
 
-    Updating UI with the state, setting a value={inputText} in <form><input>
+    Setting a value to the input text to keep in check with the UI, setting a value={inputText} in <form><input>
 
 
 FIRST PART FINISHED
@@ -116,11 +119,10 @@ FIRST PART FINISHED
 //DISPLAYING EACH TODO INPUT WITH INPUT BAR AND BUTTONS IN THE UI/STATE
 //CREATING NEW FUNCTION COMPONENT: const Todo in new doc Todo.js
 
+==> Creating the JSX to display what we have in the todos in our state, with component Todo in parent TodoList
 
-==> Create the JSX to display what we have in the todos in our state
 
-
-12 - Create new doc Todo.js ==> for displaying the Todo's input bars with buttons
+12 - Create new doc Todo.js ==> for displaying the Todo's input bars with buttons & styling
 
     TodoList.js:
 
@@ -145,15 +147,16 @@ FIRST PART FINISHED
         );
     
 Problem: it doesn't react to the state yet.
-==> having Piece of state with the Todos in the TodoList
+
 
 
 //HAVING TODO & TODOLIST COMPONENTS FUNCTIONAL
 
 
+
     Todo.js:
 
-==> Maping though it, for each object we can render a Todo component
+==> Maping though the array of objects, for each object we can render a Todo component
     Having access to each todo: {todos.map((todo) => ())}
     For each Todo from the state that we have ==> render out a Todo component
 
@@ -168,9 +171,9 @@ Problem: it doesn't react to the state yet.
      Todo
      etc.
 
-16 - Passing a key props to <Todo /> ==> key={todo.id} 
+16 - Passing a key props to <Todo /> ==> key={todo.id} for identifying every item in the list
 
-17 - Adding todos={todos} & setTodos={setTodos} in <TodoList /> App.js so as in <Todo /> in ***const TodoList TodoList.js.
+17 - Adding setTodos={setTodos} in <TodoList /> App.js so as in <Todo /> in ***const TodoList TodoList.js.
      Adding these props as arguments in **const Todo ({}) Todo.js and **const TodoList ({}) as well.
      Adding the props todo in **const Todo ({}) and in <Todo /> in **const TodoList TodoList.js.
 
@@ -227,7 +230,7 @@ return(
 
     App.js:
 
-25 - Create a new piece of STATE for filter: const [filteredTodos, setFilteredTodos] = useState([]);
+25 - Create a new piece of STATE for filter: ***const [filteredTodos, setFilteredTodos] = useState([]);
 
 26 - Create a new function:     const filterHandler = () => {}
                                 Add cases 'completed' 'uncomplited', 'default'
@@ -258,6 +261,7 @@ return(
 
 30 - Create a new function: const getLocalTodos = () => {}
      // Copy paste of the 'if' saveLocalTodos function content part but modifying the 'else' part
+     
 ==> when we save to localTodos, we save and push what we have in our state
 ==> when we get the localTodos, we have to check if we have stg. If not: empty [], if yes: get it and push it to the state
 
